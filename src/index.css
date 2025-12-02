@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ilios Groupe - Luxury Dark Theme with Gold accents */
+    --background: 20 10% 5%;
+    --foreground: 40 20% 90%;
+
+    --card: 20 10% 8%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 20 10% 10%;
+    --popover-foreground: 40 20% 90%;
+
+    /* Primary changed to #85544D (H:~8 S:27% L:41%) to pair with black */
+    --primary: 8 27% 41%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 10% 12%;
+    --secondary-foreground: 40 20% 85%;
+
+    --muted: 20 8% 15%;
+    --muted-foreground: 40 10% 55%;
+
+    --accent: 8 27% 41%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 50% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 80% 50%;
+    --warning-foreground: 20 10% 5%;
+
+    --border: 20 10% 18%;
+    --input: 20 10% 15%;
+    --ring: 35 45% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 20 10% 4%;
+    --sidebar-foreground: 40 15% 75%;
+    --sidebar-primary: 35 45% 55%;
+    --sidebar-primary-foreground: 20 10% 5%;
+    --sidebar-accent: 20 10% 10%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 20 10% 12%;
+    --sidebar-ring: 35 45% 55%;
+
+    /* Custom tokens - Ilios Gold */
+    --gradient-primary: linear-gradient(135deg, hsl(8 30% 46%), hsl(8 24% 36%));
+    --gradient-accent: linear-gradient(135deg, hsl(8 32% 48%), hsl(8 22% 34%));
+    --gradient-dark: linear-gradient(180deg, hsl(20, 10%, 6%), hsl(20, 10%, 3%));
+    
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.5), 0 4px 6px -4px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 30px hsl(35 45% 55% / 0.2);
+  }
+
+  .dark {
+    --background: 20 10% 5%;
+    --foreground: 40 20% 90%;
+
+    --card: 20 10% 8%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 20 10% 10%;
+    --popover-foreground: 40 20% 90%;
+
+    /* Primary changed to #85544D (H:~8 S:27% L:41%) to pair with black */
+    --primary: 8 27% 41%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 10% 12%;
+    --secondary-foreground: 40 20% 85%;
+
+    --muted: 20 8% 15%;
+    --muted-foreground: 40 10% 55%;
+
+    --accent: 8 27% 41%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 10% 18%;
+    --input: 20 10% 15%;
+    --ring: 35 45% 55%;
+
+    --sidebar-background: 20 10% 4%;
+    --sidebar-foreground: 40 15% 75%;
+    --sidebar-primary: 8 27% 41%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 10% 10%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 20 10% 12%;
+    --sidebar-ring: 35 45% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-dark {
+    background: var(--gradient-dark);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.3s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  font-family: 'Manrope', sans-serif;
+  border-radius: var(--radius);
+}
