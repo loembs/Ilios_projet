@@ -73,7 +73,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
         <div className="h-16 flex items-center px-4 border-b border-sidebar-border">
           <Link to="/dashboard" className="flex items-center gap-3">
             <div className="w-40 h-40 rounded-xl flex items-center justify-center flex-shrink-0">
-              <img src="https://res.cloudinary.com/dlna2kuo1/image/upload/v1764674414/logoilios_yk3swt.png" alt="logo" />
+              <img src="https://res.cloudinary.com/dlna2kuo1/image/upload/v1773142855/ikonwhite-removebg-preview_if6ov4.png" alt="logo" />
             </div>
           </Link>
         </div>

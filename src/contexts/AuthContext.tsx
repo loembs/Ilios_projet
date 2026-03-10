@@ -20,9 +20,9 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null);
 
 const mockUsers: (User & { password: string })[] = [
-  { id: "1", name: "Dialo Admin", email: "admin@ilios.com", password: "admin123", role: "admin" },
-  { id: "2", name: "Sophie Gestionnaire", email: "gestionnaire@ilios.com", password: "gest123", role: "gestionnaire" },
-  { id: "3", name: "Ahmed Technicien", email: "tech@ilios.com", password: "tech123", role: "technicien" },
+  { id: "1", name: "Saint-Julien Admin", email: "admin@ikon.com", password: "admin123", role: "admin" },
+  { id: "2", name: "Sophie Gestionnaire", email: "gestionnaire@ikon.com", password: "gest123", role: "gestionnaire" },
+  { id: "3", name: "Ahmed Technicien", email: "tech@ikon.com", password: "tech123", role: "technicien" },
 ];
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {

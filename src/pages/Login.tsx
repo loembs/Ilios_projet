@@ -33,9 +33,9 @@ const Login = () => {
         <div className="relative z-10 flex flex-col justify-center px-16 text-sidebar-foreground">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center">
-              <Building2 className="w-7 h-7 text-primary-foreground" />
+              <img src="https://res.cloudinary.com/dlna2kuo1/image/upload/v1773142855/ikonwhite-removebg-preview_if6ov4.png" alt="logo" />
             </div>
-            <span className="text-3xl font-bold text-primary-foreground">Ilios</span>
+            <span className="text-3xl font-bold text-primary-foreground">Ikon developpement</span>
           </div>
           <h1 className="text-4xl font-bold mb-4 text-primary-foreground animate-fade-in">
             Gestion Immobilière
