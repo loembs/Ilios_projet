@@ -52,12 +52,12 @@ const MapView = () => {
     <AppLayout>
       <div className="space-y-4">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <h1 className="text-2xl font-bold">Cartographie</h1>
-            <p className="text-muted-foreground">{filteredBuildings.length} bâtiments affichés</p>
+            <h1 className="text-xl sm:text-2xl font-bold">Cartographie</h1>
+            <p className="text-muted-foreground text-sm">{filteredBuildings.length} bâtiments affichés</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <Button variant="outline" onClick={() => setShowFilters(!showFilters)}>
               <Filter className="w-4 h-4 mr-2" />
               Filtres
@@ -70,10 +70,10 @@ const MapView = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           {/* Filters Sidebar */}
           {showFilters && (
-            <div className="w-72 space-y-4 animate-slide-in-left flex-shrink-0">
+            <div className="w-full lg:w-72 space-y-4 animate-slide-in-left lg:flex-shrink-0">
               <Card>
                 <CardContent className="p-4 space-y-4">
                   <div>

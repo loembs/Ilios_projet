@@ -69,7 +69,7 @@ const Login = () => {
             <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
               <Building2 className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-2xl font-bold">Ilios</span>
+            <span className="text-2xl font-bold">Ikon developpement</span>
           </div>
 
           <div className="text-center mb-8">

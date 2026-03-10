@@ -167,6 +167,7 @@ const Tenants = () => {
 
         {/* Table */}
         <Card>
+          <div className="overflow-x-auto">
           <Table>
             <TableHeader>
               <TableRow>
@@ -268,6 +269,7 @@ const Tenants = () => {
               ))}
             </TableBody>
           </Table>
+          </div>
         </Card>
       </div>
 

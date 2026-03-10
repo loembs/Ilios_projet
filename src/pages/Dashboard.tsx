@@ -54,12 +54,12 @@ const Dashboard = () => {
     <AppLayout>
       <div className="space-y-6">
         {/* Page Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <h1 className="text-2xl font-bold">Bonjour, {user?.name.split(' ')[0]} 👋</h1>
-            <p className="text-muted-foreground">Vue d'ensemble de votre portefeuille immobilier</p>
+            <h1 className="text-xl sm:text-2xl font-bold">Bonjour, {user?.name.split(' ')[0]} 👋</h1>
+            <p className="text-muted-foreground text-sm">Vue d'ensemble de votre portefeuille immobilier</p>
           </div>
-          <Button variant="gradient" asChild>
+          <Button variant="gradient" asChild className="self-start sm:self-auto">
             <Link to="/map">
               <Building className="w-4 h-4 mr-2" />
               Voir la carte

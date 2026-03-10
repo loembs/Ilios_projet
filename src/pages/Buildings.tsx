@@ -220,6 +220,7 @@ const Buildings = () => {
           </div>
         ) : (
           <Card>
+            <div className="overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -291,6 +292,7 @@ const Buildings = () => {
                 })}
               </TableBody>
             </Table>
+            </div>
           </Card>
         )}
       </div>

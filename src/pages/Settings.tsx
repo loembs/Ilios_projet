@@ -46,7 +46,7 @@ const Settings = () => {
                 <CardDescription>Modifiez vos informations de profil</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">Prénom</Label>
                     <Input id="firstName" defaultValue={user?.name.split(' ')[0]} />
@@ -164,7 +164,7 @@ const Settings = () => {
                   <Label htmlFor="companyAddress">Adresse</Label>
                   <Input id="companyAddress" defaultValue="123 Avenue Bourguiba, Dakar" />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="taxId">NINEA</Label>
                     <Input id="taxId" defaultValue="123456789" />
