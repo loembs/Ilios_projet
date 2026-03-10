@@ -158,7 +158,7 @@ const Settings = () => {
               <CardContent className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="companyName">Nom de l'entreprise</Label>
-                  <Input id="companyName" defaultValue="Ilios Property Management" />
+                  <Input id="companyName" defaultValue="Ikon developpement Property Management" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="companyAddress">Adresse</Label>
